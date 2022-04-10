@@ -1,0 +1,481 @@
+[gd_scene load_steps=24 format=2]
+
+[ext_resource path="res://HUD/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/lava3.png" type="Texture" id=2]
+[ext_resource path="res://Assets/buttonStock1h.png" type="Texture" id=3]
+[ext_resource path="res://Assets/buttonStock1d.png" type="Texture" id=4]
+[ext_resource path="res://Assets/buttonStock1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Helveticrap.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/VerminVerile-wXyw.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 256, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 512, 0, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 256, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 512, 256, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 256, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 512, 512, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 768, 256, 256 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 256, 768, 256, 256 )
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ) ],
+"loop": true,
+"name": "default",
+"speed": 10.0
+} ]
+
+[sub_resource type="DynamicFont" id=23]
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=24]
+size = 28
+outline_size = 3
+outline_color = Color( 1, 1, 1, 0.960784 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 28
+outline_size = 3
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=26]
+size = 70
+outline_size = 8
+font_data = ExtResource( 7 )
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 144, 339 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background Container" type="Node2D" parent="."]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 128, 128 )
+frames = SubResource( 11 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 128, 384 )
+frames = SubResource( 11 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 128, 640 )
+frames = SubResource( 11 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 128, 896 )
+frames = SubResource( 11 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite5" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 128, 1152 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite6" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 384, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite7" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 384, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite8" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 384, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite9" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 384, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite10" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 384, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite11" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 640, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite12" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 640, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite13" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 640, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite14" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 640, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite15" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 640, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite16" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 896, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite17" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 896, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite18" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 896, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite19" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 896, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite20" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 896, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite21" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1152, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite22" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1152, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite23" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1152, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite24" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1152, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite25" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1152, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite26" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1408, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite27" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1408, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite28" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1408, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite29" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1408, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite30" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1408, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite31" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1664, 128 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite32" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1664, 384 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite33" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1664, 640 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite34" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1664, 896 )
+frames = SubResource( 11 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite35" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1664, 1152 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite36" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1920, 128 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite37" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1920, 384 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite38" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1920, 640 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite39" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1920, 896 )
+frames = SubResource( 11 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite40" type="AnimatedSprite" parent="Background Container"]
+position = Vector2( 1920, 1152 )
+frames = SubResource( 11 )
+frame = 6
+playing = true
+
+[node name="1Player" type="Button" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -156.0
+margin_top = 88.0
+margin_right = 156.0
+margin_bottom = 298.0
+custom_fonts/font = SubResource( 23 )
+text = "1-Player"
+icon = ExtResource( 3 )
+flat = true
+clip_text = true
+expand_icon = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="1-Player" type="Label" parent="1Player"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -64.5
+margin_top = 88.0
+margin_right = 64.5
+margin_bottom = 116.0
+custom_colors/font_color = Color( 0.85098, 0.0980392, 0.0980392, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.988235, 0.988235, 1 )
+custom_fonts/font = SubResource( 24 )
+text = "1-Player"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2Player" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -156.0
+margin_top = -103.0
+margin_right = 156.0
+margin_bottom = 103.0
+icon = ExtResource( 4 )
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2-Player" type="Label" parent="2Player"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -67.5
+margin_top = -14.0
+margin_right = 67.5
+margin_bottom = 14.0
+custom_colors/font_color = Color( 0.85098, 0.0980392, 0.0980392, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.988235, 0.988235, 1 )
+custom_fonts/font = SubResource( 24 )
+text = "2-Player"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -156.0
+margin_top = -294.0
+margin_right = 156.0
+margin_bottom = -88.0
+icon = ExtResource( 5 )
+flat = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Label" parent="Quit"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -67.5
+margin_top = -115.0
+margin_right = 67.5
+margin_bottom = -56.0
+custom_colors/font_color = Color( 0.85098, 0.0980392, 0.0980392, 1 )
+custom_colors/font_outline_modulate = Color( 1, 0.988235, 0.988235, 1 )
+custom_fonts/font = SubResource( 24 )
+text = "Quit
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Message" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -254.0
+margin_top = -83.0
+margin_right = 263.0
+margin_bottom = -24.0
+custom_colors/font_color = Color( 0.988235, 0.517647, 0.0392157, 1 )
+custom_colors/font_outline_modulate = Color( 0.258824, 0.027451, 0.027451, 1 )
+custom_fonts/font = SubResource( 25 )
+text = "For Fullscreen, Press F.
+To Pause at any time, Press Esc."
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PinappleExpress" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -456.0
+margin_top = 51.0
+margin_right = 458.0
+margin_bottom = 129.0
+custom_colors/font_color = Color( 0.917647, 0.517647, 0.054902, 1 )
+custom_colors/font_outline_modulate = Color( 0.0627451, 0.317647, 0.133333, 1 )
+custom_fonts/font = SubResource( 26 )
+text = "PineApple Dungeons"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="1Player" to="." method="_on_1Player_pressed"]
+[connection signal="pressed" from="2Player" to="." method="_on_2Player_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]

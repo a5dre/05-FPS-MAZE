@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Pineapple.ogg-d5b25b5d0b84648690975f684eeb4de1.oggstr"
+
+[deps]
+
+source_file="res://Assets/Pineapple.ogg"
+dest_files=[ "res://.import/Pineapple.ogg-d5b25b5d0b84648690975f684eeb4de1.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0
