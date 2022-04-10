@@ -4,17 +4,17 @@ Created for Game Technology 4/9/2022
 You are stuck in a Dungeon! Find the pineapple, be wary of the guard, and escape through the portal.
 
 ## Implementation
-Animated Main Menu Screen
-Multiple Fonts
-Custom CDG Torches, made by Andre Anuszkiewicz
-Dungeon Textures
-Dungeon Music
-Additional Light Sources
-Polished in-game Menu
-Custom Sound effects for Guard and Pineapple, made by Andre Anuszkiewicz
-20x12 procedurally generated tile labyrinth
-Always a different path to portal and pineapple
-Full Screen adaptability ('F' Key)
+Animated Main Menu Screen |
+Multiple Fonts |
+Custom CDG Torches, made by Andre Anuszkiewicz |
+Dungeon Textures |
+Dungeon Music |
+Additional Light Sources |
+Polished in-game Menu |
+Custom Sound effects for Guard and Pineapple, made by Andre Anuszkiewicz |
+20x12 procedurally generated tile labyrinth |
+Always a different path to portal and pineapple |
+Full Screen adaptability ('F' Key) 
 
 ## References
 
